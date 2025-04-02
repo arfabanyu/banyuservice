@@ -1,21 +1,27 @@
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
-    <section className='bg-white grid place-content-center min-h-[50vh] dark:bg-gray-900'>
+    <section
+      id='contact'
+      className='bg-base-100 text-base-content grid place-content-center min-h-[50vh] isolate relative overflow-hidden'
+    >
+      <div className='h-[100vw] w-full -z-10 absolute left-1/2 -translate-x-1/2 rounded-full top-10 bg-gradient-to-b from-base-content to-transparent opacity-5'></div>
       <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
         <div className='mx-auto max-w-screen-sm text-center'>
-          <h2 className='mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white'>
-          Hubungi Kami Sekarang!
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900'>
+            <span className='bg-primary text-primary-content rounded-lg'>
+              Hubungi
+            </span>{' '}
+            Kami Sekarang!
           </h2>
-          <p className='mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg'>
-          Hubungi kami langsung untuk konsultasi gratis dan penjadwalan perbaikan.
+          <p className='mb-6 font-light text-gray-600 md:text-lg'>
+            Hubungi kami langsung untuk konsultasi gratis dan penjadwalan
+            perbaikan.
           </p>
-          <a
-            href='#'
-            className='text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800'
-          >
-            Hubungi
+          <a href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?' className='btn btn-primary btn-lg'>
+            Hubungi <FaArrowRight/>
           </a>
         </div>
       </div>

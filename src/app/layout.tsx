@@ -29,7 +29,8 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiase`}
+        data-theme='light'
       >
         {children}
       </body>

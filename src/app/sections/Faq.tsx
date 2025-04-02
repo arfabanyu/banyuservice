@@ -2,10 +2,11 @@ import React from 'react';
 
 const Faq = () => {
   return (
-    <section className='bg-white dark:bg-gray-900'>
+    <section id='faq' className='bg-base-100 text-base-content isolate relative'>
+      <div className='h-screen w-[100vh] -z-10 absolute -left-135 lg:-left-1/4 rounded-full top-1/2 -translate-y-1/2 bg-gradient-to-b from-base-content to-transparent opacity-5'></div>
       <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
-        <h2 className='mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>
-          Frequently asked questions
+        <h2 className='mb-8 text-4xl tracking-tight font-extrabold'>
+          Paling sering <span className="bg-primary text-primary-content rounded-lg">ditanya</span> pelanggan
         </h2>
 
         <div className='join join-vertical w-full'>
@@ -38,7 +39,7 @@ const Faq = () => {
 
 const Question = ({ title = '', answer = '', defaultChecked = false }) => {
   return (
-    <div className='collapse collapse-arrow join-item border-base-300 border'>
+    <div className='collapse collapse-arrow join-item'>
       <input
         type='radio'
         name='my-accordion-4'

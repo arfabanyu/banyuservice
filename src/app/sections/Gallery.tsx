@@ -15,25 +15,25 @@ import eleven from '/images/reviews/eleven.png';
 import twelve from '/images/reviews/twelve.png';
 import thirteen from '/images/reviews/thirteen.png';
 import fourteen from '/images/reviews/fourteen.png';
-const Testimonials = () => {
+const Gallery = () => {
   const [isShow, setIsShow] = useState(false);
 
   const handleShow = () => {
     setIsShow(!isShow);
   };
   return (
-    <section id='testimonials' className='bg-base-100 text-base-content isolate relative overflow-hidden'>
-      <div className='h-screen w-[100vh] -z-10 absolute -right-135 lg:-right-1/4 rounded-full top-0 bg-gradient-to-b from-base-content to-transparent opacity-5'></div>
+    <section id='gallery' className='bg-base-100 text-base-content'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6'>
         <div className='mx-auto max-w-screen-sm'>
           <h2 className='mb-4 text-4xl tracking-tight font-extrabold'>
             <span className='bg-primary text-primary-content rounded-lg'>
-              Apa
+              Hasil
             </span>{' '}
-            Kata Pelanggan Kami?
+            Pekerjaan Kami
           </h2>
           <p className='mb-8 font-light text-gray-600 lg:mb-16 sm:text-xl'>
-            Dengar Langsung dari Mereka yang Sudah Merasakan Manfaatnya!
+            Dari rusak parah jadi kembali normal! Ini dia beberapa contoh TV
+            yang berhasil kami perbaiki.
           </p>
         </div>
         <div
@@ -72,4 +72,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Gallery;

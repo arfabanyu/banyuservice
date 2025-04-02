@@ -1,51 +1,37 @@
 // import { Link } from 'react-router-dom';
-import logo from '/logo.jpg';
+import hero from '/images/generals/hero.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa6';
 
 // import Blob from '../assets/blob.png';
 const Hero = () => {
   return (
-    <section className='bg-white grid place-content-center min-h-screen  dark:bg-gray-900'>
+    <section id='hero' className='isolate bg-base-100 text-base-content grid place-content-center min-h-screen relative overflow-hidden'>
+      <div className='h-screen w-[100vh] bg-primary -z-10 absolute -right-155 lg:-right-1/4 rounded-full top-1/2 -translate-y-1/2'></div>
       <div className='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
         <div className='mr-auto place-self-center lg:col-span-7'>
-          <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white'>
-            TV Rusak? Kami Bikin Nyala Lagi!
+          <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl'>
+            TV <span className='bg-primary text-primary-content rounded-lg'>Rusak?</span> Kami Bikin Nyala Lagi!
           </h1>
-          <p className='max-w-2xl mb-6 font-semibold text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
-          Layanan cepat, harga jujur, dan garansi nyata. TV Anda nggak boleh pensiun dini!
+          <p className='max-w-2xl font-light mb-6 lg:mb-8 md:text-lg lg:text-xl'>
+            Layanan cepat, harga jujur, dan garansi nyata. TV Anda nggak boleh
+            pensiun dini!
           </p>
-          <a
-            href='#'
-            className='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900'
-          >
-            Get started
-            <svg
-              className='w-5 h-5 ml-2 -mr-1'
-              fill='currentColor'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                fillRule='evenodd'
-                d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-                clipRule='evenodd'
-              ></path>
-            </svg>
+          <a href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?' className='btn btn-primary btn-lg'>
+            Hubungi <FaArrowRight/>
           </a>
           <a
-            href='#'
-            className='inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
+            href='#problems'
+            className='btn btn-ghost btn-lg ml-3'
           >
-            Speak to Sales
+            Mulai
           </a>
         </div>
         <div className='hidden lg:mt-0 lg:col-span-5 lg:flex'>
           <Image
-            src={logo}
+            src={hero}
             alt='mockup'
-            height={300}
-            width={300}
             className='mx-auto'
           />
         </div>

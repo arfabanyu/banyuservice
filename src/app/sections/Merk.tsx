@@ -1,48 +1,52 @@
 import Image from 'next/image';
 import React from 'react';
-import changhong from '/logos/changhong.png'; 
-import coocaa from '/logos/coocaa.png'; 
-import lg from '/logos/lg.png'; 
-import panasonic from '/logos/panasonic.png'; 
-import polytron from '/logos/polytron.png'; 
-import samsung from '/logos/samsung.png'; 
-import sharp from '/logos/sharp.png'; 
-import sony from '/logos/sony.png'; 
-import tcl from '/logos/tcl.png'; 
-import toshiba from '/logos/toshiba.png'; 
-import xiaomi from '/logos/xiaomi.png'; 
+import changhong from '/images/logos/changhong.png';
+import coocaa from '/images/logos/coocaa.png';
+import lg from '/images/logos/lg.png';
+import panasonic from '/images/logos/panasonic.png';
+import polytron from '/images/logos/polytron.png';
+import samsung from '/images/logos/samsung.png';
+import sharp from '/images/logos/sharp.png';
+import sony from '/images/logos/sony.png';
+import tcl from '/images/logos/tcl.png';
+import toshiba from '/images/logos/toshiba.png';
+import xiaomi from '/images/logos/xiaomi.png';
 
 const Merk = () => {
   return (
-    <section className='bg-white dark:bg-gray-900'>
+    <section
+      id='merk'
+      className='bg-base-100 text-base-content isolate relative'
+    >
+      <div className='h-screen w-[100vh] -z-10 absolute -left-135 lg:-left-1/4 rounded-full -top-40 bg-gradient-to-b from-base-content to-transparent opacity-5'></div>
       <div className='py-8 lg:py-16 mx-auto max-w-screen-xl px-4'>
-        <h2 className='mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl'>
-          Kami menangani banyak merk TV seperti
+        <h2 className='mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900  md:text-4xl'>
+          Kami{' '}
+          <span className='bg-primary text-primary-content rounded-lg'>
+            menangani
+          </span>{' '}
+          banyak merk TV seperti
         </h2>
-        <div className='grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400'>
-          <Logo src={changhong} link={'/'} />
-          <Logo src={coocaa} link={'/'} />
-          <Logo src={lg} link={'/'} />
-          <Logo src={tcl} link={'/'} />
-          <Logo src={toshiba} link={'/'} />
-          <Logo src={xiaomi} link={'/'} />
-          <Logo src={panasonic} link={'/'} />
-          <Logo src={polytron} link={'/'} />
-          <Logo src={samsung} link={'/'} />
-          <Logo src={sharp} link={'/'} />
-          <Logo src={sony} link={'/'} />
+        <div className='grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] items-center gap-8 text-gray-500 sm:gap-12'>
+          <Logo src={changhong} />
+          <Logo src={coocaa} />
+          <Logo src={lg} />
+          <Logo src={tcl} />
+          <Logo src={toshiba} />
+          <Logo src={xiaomi} />
+          <Logo src={panasonic} />
+          <Logo src={polytron} />
+          <Logo src={samsung} />
+          <Logo src={sharp} />
+          <Logo src={sony} />
         </div>
       </div>
     </section>
   );
 };
 
-const Logo = ({ src, link }) => {
-  return (
-    <a href={link} className='flex justify-center items-center'>
-      <Image src={src} alt={src} width={150} height={150} />
-    </a>
-  );
+const Logo = ({ src }) => {
+  return <Image src={src} alt={src}  className='mx-auto' />;
 };
 
 export default Merk;
