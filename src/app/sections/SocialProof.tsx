@@ -13,7 +13,12 @@ const SocialProof = () => {
             </dd>
           </div>
           <div className='flex flex-col items-center justify-center'>
-            <dt className='flex items-center mb-2 text-3xl md:text-5xl font-extrabold'><span>4.9/5</span><span className='mt-1 text-yellow-300'><MdStar/></span></dt>
+            <dt className='flex items-center mb-2 text-3xl md:text-5xl font-extrabold'>
+              <span>4.9/5</span>
+              <span className='mt-1 text-yellow-300'>
+                <MdStar />
+              </span>
+            </dt>
             <dd className='font-light md:text-lg text-gray-500 '>
               review pelanggan
             </dd>

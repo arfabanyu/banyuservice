@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa6';
+import one from '/images/generals/layar-flicker.webp';
+import nine from '/images/generals/stock-motherboard-sharp.webp';
+import three from '/images/generals/penggantian-lampu-backlight.webp';
+import eleven from '/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
 
 const Services = () => {
   return (
@@ -9,21 +13,17 @@ const Services = () => {
       className='scroll-m-10 bg-base-100 text-base-content overflow-hidden'
     >
       <Service>
-        <Img
-          src={
-            'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg'
-          }
-        />
+        <Img src={one} alt='Kerusakan layar flicker pada TV LCD Samsung' />
         <Text
           title={
             <span>
               <span className='bg-primary text-primary-content rounded-lg'>
                 Service
               </span>{' '}
-              TV LED, LCD, dan tabung
+              TV LED, LCD, dan plasma
             </span>
           }
-          body='Kami menangani berbagai jenis TV, dari model klasik hingga teknologi terbaru. Tim kami siap menghidupkan kembali layar favorit Anda dengan metode perbaikan yang aman dan profesional.'
+          body='Kami menyediakan jasa service TV LED, LCD, dan plasma untuk berbagai merek, dari model klasik hingga teknologi terbaru. Tim kami siap menghidupkan kembali layar favorit Anda dengan metode perbaikan yang aman dan profesional.'
           visualKey={1}
         />
       </Service>
@@ -41,18 +41,10 @@ const Services = () => {
           visualKey={2}
           className='order-1 md:-order-1'
         />
-        <Img
-          src={
-            'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg'
-          }
-        />
+        <Img src={nine} alt='Stock motherboard TV Sharp' />
       </Service>
       <Service>
-        <Img
-          src={
-            'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg'
-          }
-        />
+        <Img src={three} alt='Penggantian lampu backlight oleh teknisi' />
         <Text
           title={
             <span>
@@ -74,31 +66,28 @@ const Services = () => {
               <span className='bg-primary text-primary-content rounded-lg'>
                 Diagnosa
               </span>{' '}
-              cepat & konsultasi gratis
+              cepat & konsultasi mudah
             </span>
           }
-          body='Kami memahami bahwa tidak semua orang bisa langsung tahu apa yang salah dengan TV mereka. Konsultasikan masalah Anda dengan teknisi kami, dan dapatkan diagnosa awal serta estimasi biaya secara GRATIS!'
+          body='Kami memahami bahwa tidak semua orang bisa langsung tahu apa yang salah dengan TV mereka. Kami siap membantu menganalisis masalah TV Anda dengan cepat. Hubungi teknisi kami untuk mendapatkan diagnosa awal dan estimasi biaya sebelum perbaikan dilakukan!'
           visualKey={4}
           className='order-1 md:-order-1'
         />
-        <Img
-          src={
-            'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg'
-          }
-        />
+        <Img src={eleven} alt='Hasil perbaikan layar Sony Android TV' />
       </Service>
     </section>
   );
 };
 
-const Img = ({ src }) => {
+const Img = ({ src, alt = '' }) => {
   return (
     <Image
       className='w-full aspect-[4_/_3] object-cover'
       src={src}
-      alt='dashboard image'
+      alt={alt}
       width={500}
       height={500}
+      loading='lazy'
     />
   );
 };

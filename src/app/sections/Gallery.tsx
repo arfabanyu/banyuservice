@@ -1,20 +1,20 @@
 'use client';
 import Image from 'next/image';
-import React, { use, useState } from 'react';
-import one from '/images/reviews/one.png';
-import two from '/images/reviews/two.png';
-import three from '/images/reviews/three.png';
-import four from '/images/reviews/four.png';
-import five from '/images/reviews/five.png';
-import six from '/images/reviews/six.png';
-import seven from '/images/reviews/seven.png';
-import eight from '/images/reviews/eight.png';
-import nine from '/images/reviews/nine.png';
-import ten from '/images/reviews/ten.png';
-import eleven from '/images/reviews/eleven.png';
-import twelve from '/images/reviews/twelve.png';
-import thirteen from '/images/reviews/thirteen.png';
-import fourteen from '/images/reviews/fourteen.png';
+import React, { useState } from 'react';
+import one from '/images/generals/layar-flicker.webp';
+import two from '/images/generals/layar-klise.webp';
+import three from '/images/generals/penggantian-lampu-backlight.webp';
+import four from '/images/generals/proses-perbaikan-power-supply.webp';
+import five from '/images/generals/pengecekan-unit-lcd-tv-lg-redtop-hotel.webp';
+import six from '/images/generals/hasil-penggantian-layar-led-tv-samsung.webp';
+import seven from '/images/generals/hasil-penggantian-lampu-backlight.webp';
+import eight from '/images/generals/kunjungan-service-tv-lg.webp';
+import nine from '/images/generals/stock-motherboard-sharp.webp';
+import ten from '/images/generals/banner-bengkel.webp';
+import eleven from '/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
+import twelve from '/images/generals/proses-perbaikan-layar-sony-android-tv.webp';
+import thirteen from '/images/generals/perbaikan-tcl-software.webp';
+import fourteen from '/images/generals/stock-motherboard-tv-samsung.webp';
 const Gallery = () => {
   const [isShow, setIsShow] = useState(false);
 
@@ -32,29 +32,106 @@ const Gallery = () => {
             Pekerjaan Kami
           </h2>
           <p className='mb-8 font-light text-gray-600 lg:mb-16 sm:text-xl'>
-            Dari rusak parah jadi kembali normal! Ini dia beberapa contoh TV
-            yang berhasil kami perbaiki.
+            Dari TV mati total menjadi normal kembali! Kami telah menangani{' '}
+            <strong>2.000+</strong> TV dengan tingkat kepuasan pelanggan{' '}
+            <strong>4.9/5</strong> dan lebih dari <strong>10</strong> tahun
+            pengalaman dalam service TV LED, LCD, dan plasma.
           </p>
         </div>
         <div
-          className={`md:columns-3 overflow-hidden space-y-4 w-fit mx-auto transition-all ${
-            isShow ? 'h-full' : 'h-50'
+          className={`md:columns-3 overflow-hidden space-y-4 w-fit mx-auto relative transition-all ${
+            isShow ? 'h-full' : 'h-150'
           }`}
         >
-          <Image src={one} alt='' className='w-96 h-fit' />
-          <Image src={two} alt='' className='w-96 h-fit' />
-          <Image src={three} alt='' className='w-96 h-fit' />
-          <Image src={four} alt='' className='w-96 h-fit' />
-          <Image src={five} alt='' className='w-96 h-fit' />
-          <Image src={six} alt='' className='w-96 h-fit' />
-          <Image src={seven} alt='' className='w-96 h-fit' />
-          <Image src={eight} alt='' className='w-96 h-fit' />
-          <Image src={nine} alt='' className='w-96 h-fit' />
-          <Image src={ten} alt='' height={0} width={0} className='w-96 h-fit' />
-          <Image src={eleven} alt='' className='w-96 h-fit' />
-          <Image src={twelve} alt='' className='w-96 h-fit' />
-          <Image src={thirteen} alt='' className='w-96 h-fit' />
-          <Image src={fourteen} alt='' className='w-96 h-fit' />
+          {!isShow && (
+            <div className='w-full absolute h-full bg-gradient-to-t from-base-100 to-30% to-transparent'></div>
+          )}
+          <Image
+            src={one}
+            alt='Kerusakan layar flicker pada TV LCD Samsung'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={two}
+            alt='Kerusakan layar klise pada TV LED Samsung'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={three}
+            alt='Penggantian lampu backlight oleh teknisi'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={four}
+            alt='Proses perbaikan power supply'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={five}
+            alt='Kunjungan pengecekan unit LCD TV LG di hotel RedTop'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={six}
+            alt='Hasil penggantian layar LED TV Samsung'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={seven}
+            alt='Hasil penggantian lampu backlight'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={eight}
+            alt='Kunjungan service'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={nine}
+            alt='Stock motherboard TV Sharp'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={ten}
+            alt='Banner Bengkel Banyuservice'
+            height={0}
+            width={0}
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={eleven}
+            alt='Hasil perbaikan layar Sony Android TV'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={twelve}
+            alt='Proses perbaikan layar Sony Android TV'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={thirteen}
+            alt='Proses perbaikan software LED TV TCL'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={fourteen}
+            alt='Stock motherboard LED TV Samsung'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
         </div>
         <div className='space-x-2'>
           <button onClick={handleShow} className='btn btn-outline'>

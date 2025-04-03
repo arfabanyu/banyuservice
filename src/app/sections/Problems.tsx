@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import two from '/images/generals/layar-klise.webp';
 
 const Problems = () => {
   return (
@@ -10,18 +11,14 @@ const Problems = () => {
             <span className='bg-primary text-primary-content rounded-lg'>
               Terjadi
             </span>{' '}
-            pada TV Anda
+            pada TV
           </h2>
           <p className='text-gray-500 sm:text-xl'>
             Kami paham betul bagaimana frustrasinya saat TV bermasalah.
           </p>
         </div>
         <Service>
-          <Img
-            src={
-              'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg'
-            }
-          />
+          <Img src={two} />
           <Text />
         </Service>
       </div>
@@ -34,7 +31,7 @@ const Img = ({ src }) => {
     <Image
       className='w-full aspect-[4_/_3] object-cover'
       src={src}
-      alt='dashboard image'
+      alt='Kerusakan layar klise pada TV LED Samsung'
       width={500}
       height={500}
     />

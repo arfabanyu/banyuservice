@@ -17,11 +17,15 @@ const Contact = () => {
             Kami Sekarang!
           </h2>
           <p className='mb-6 font-light text-gray-600 md:text-lg'>
-            Hubungi kami langsung untuk konsultasi gratis dan penjadwalan
-            perbaikan.
+            Jangan biarkan TV rusak mengganggu hiburan keluarga Anda. Hubungi
+            kami untuk konsultasi dan penjadwalan service TV di area Jakarta dan
+            sekitarnya.
           </p>
-          <a href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?' className='btn btn-primary btn-lg'>
-            Hubungi <FaArrowRight/>
+          <a
+            href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?'
+            className='btn btn-primary btn-lg'
+          >
+            Hubungi <FaArrowRight />
           </a>
         </div>
       </div>
