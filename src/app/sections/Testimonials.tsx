@@ -1,20 +1,20 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import one from '/images/reviews/one.webp';
-import two from '/images/reviews/two.webp';
-import three from '/images/reviews/three.webp';
-import four from '/images/reviews/four.webp';
-import five from '/images/reviews/five.webp';
-import six from '/images/reviews/six.webp';
-import seven from '/images/reviews/seven.webp';
-import eight from '/images/reviews/eight.webp';
-import nine from '/images/reviews/nine.webp';
-import ten from '/images/reviews/ten.webp';
-import eleven from '/images/reviews/eleven.webp';
-import twelve from '/images/reviews/twelve.webp';
-import thirteen from '/images/reviews/thirteen.webp';
-import fourteen from '/images/reviews/fourteen.webp';
+import one from '~/images/reviews/one.webp';
+import two from '~/images/reviews/two.webp';
+import three from '~/images/reviews/three.webp';
+import four from '~/images/reviews/four.webp';
+import five from '~/images/reviews/five.webp';
+import six from '~/images/reviews/six.webp';
+import seven from '~/images/reviews/seven.webp';
+import eight from '~/images/reviews/eight.webp';
+import nine from '~/images/reviews/nine.webp';
+import ten from '~/images/reviews/ten.webp';
+import eleven from '~/images/reviews/eleven.webp';
+import twelve from '~/images/reviews/twelve.webp';
+import thirteen from '~/images/reviews/thirteen.webp';
+import fourteen from '~/images/reviews/fourteen.webp';
 const Testimonials = () => {
   const [isShow, setIsShow] = useState(false);
 

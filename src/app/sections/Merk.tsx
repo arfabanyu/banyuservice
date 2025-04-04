@@ -1,16 +1,16 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
-import changhong from '/images/logos/changhong.png';
-import coocaa from '/images/logos/coocaa.png';
-import lg from '/images/logos/lg.png';
-import panasonic from '/images/logos/panasonic.png';
-import polytron from '/images/logos/polytron.png';
-import samsung from '/images/logos/samsung.png';
-import sharp from '/images/logos/sharp.png';
-import sony from '/images/logos/sony.png';
-import tcl from '/images/logos/tcl.png';
-import toshiba from '/images/logos/toshiba.png';
-import xiaomi from '/images/logos/xiaomi.png';
+import changhong from '~/images/logos/changhong.png';
+import coocaa from '~/images/logos/coocaa.png';
+import lg from '~/images/logos/lg.png';
+import panasonic from '~/images/logos/panasonic.png';
+import polytron from '~/images/logos/polytron.png';
+import samsung from '~/images/logos/samsung.png';
+import sharp from '~/images/logos/sharp.png';
+import sony from '~/images/logos/sony.png';
+import tcl from '~/images/logos/tcl.png';
+import toshiba from '~/images/logos/toshiba.png';
+import xiaomi from '~/images/logos/xiaomi.png';
 
 const Merk = () => {
   return (
@@ -28,25 +28,25 @@ const Merk = () => {
           banyak merk TV seperti
         </h2>
         <div className='grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] items-center gap-8 text-gray-500 sm:gap-12'>
-          <Logo src={changhong} />
-          <Logo src={coocaa} />
-          <Logo src={lg} />
-          <Logo src={tcl} />
-          <Logo src={toshiba} />
-          <Logo src={xiaomi} />
-          <Logo src={panasonic} />
-          <Logo src={polytron} />
-          <Logo src={samsung} />
-          <Logo src={sharp} />
-          <Logo src={sony} />
+          <Logo src={changhong} alt='changhong-logo' />
+          <Logo src={coocaa} alt='coocaa-logo' />
+          <Logo src={lg} alt='lg-logo' />
+          <Logo src={tcl} alt='tcl-logo' />
+          <Logo src={toshiba} alt='toshiba-logo' />
+          <Logo src={xiaomi} alt='xiaomi-logo' />
+          <Logo src={panasonic} alt='pasasonic-logo' />
+          <Logo src={polytron} alt='polytron-logo' />
+          <Logo src={samsung} alt='samsung-logo' />
+          <Logo src={sharp} alt='sharp-logo' />
+          <Logo src={sony} alt='sony-logo' />
         </div>
       </div>
     </section>
   );
 };
 
-const Logo = ({ src }) => {
-  return <Image src={src} alt={src}  className='mx-auto' />;
+const Logo = ({ src, alt }: { src: StaticImageData; alt: string }) => {
+  return <Image src={src} alt={alt} className='mx-auto' />;
 };
 
 export default Merk;

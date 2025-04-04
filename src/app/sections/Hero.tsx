@@ -1,5 +1,5 @@
 // import { Link } from 'react-router-dom';
-import hero from '/images/generals/hero.svg';
+import hero from '~/images/generals/hero.svg';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa6';
 

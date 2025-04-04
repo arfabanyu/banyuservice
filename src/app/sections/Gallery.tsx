@@ -1,20 +1,20 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import one from '/images/generals/layar-flicker.webp';
-import two from '/images/generals/layar-klise.webp';
-import three from '/images/generals/penggantian-lampu-backlight.webp';
-import four from '/images/generals/proses-perbaikan-power-supply.webp';
-import five from '/images/generals/pengecekan-unit-lcd-tv-lg-redtop-hotel.webp';
-import six from '/images/generals/hasil-penggantian-layar-led-tv-samsung.webp';
-import seven from '/images/generals/hasil-penggantian-lampu-backlight.webp';
-import eight from '/images/generals/kunjungan-service-tv-lg.webp';
-import nine from '/images/generals/stock-motherboard-sharp.webp';
-import ten from '/images/generals/banner-bengkel.webp';
-import eleven from '/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
-import twelve from '/images/generals/proses-perbaikan-layar-sony-android-tv.webp';
-import thirteen from '/images/generals/perbaikan-tcl-software.webp';
-import fourteen from '/images/generals/stock-motherboard-tv-samsung.webp';
+import one from '~/images/generals/layar-flicker.webp';
+import two from '~/images/generals/layar-klise.webp';
+import three from '~/images/generals/penggantian-lampu-backlight.webp';
+import four from '~/images/generals/proses-perbaikan-power-supply.webp';
+import five from '~/images/generals/pengecekan-unit-lcd-tv-lg-redtop-hotel.webp';
+import six from '~/images/generals/hasil-penggantian-layar-led-tv-samsung.webp';
+import seven from '~/images/generals/hasil-penggantian-lampu-backlight.webp';
+import eight from '~/images/generals/kunjungan-service-tv-lg.webp';
+import nine from '~/images/generals/stock-motherboard-sharp.webp';
+import ten from '~/images/generals/banner-bengkel.webp';
+import eleven from '~/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
+import twelve from '~/images/generals/proses-perbaikan-layar-sony-android-tv.webp';
+import thirteen from '~/images/generals/perbaikan-tcl-software.webp';
+import fourteen from '~/images/generals/stock-motherboard-tv-samsung.webp';
 const Gallery = () => {
   const [isShow, setIsShow] = useState(false);
 

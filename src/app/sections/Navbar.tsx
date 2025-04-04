@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import logo from '/images/logos/logo.jpg';
+import logo from '~/images/logos/logo.jpg';
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);

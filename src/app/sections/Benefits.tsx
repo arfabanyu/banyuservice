@@ -56,7 +56,15 @@ const Benefits = () => {
   );
 };
 
-const Card = ({ icon, title = '', body = '' }) => {
+const Card = ({
+  icon,
+  title = '',
+  body = '',
+}: {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+}) => {
   return (
     <div>
       <div className='flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary lg:h-12 lg:w-12'>

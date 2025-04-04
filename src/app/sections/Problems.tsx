@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import two from '/images/generals/layar-klise.webp';
+import Image, { StaticImageData } from 'next/image';
+import two from '~/images/generals/layar-klise.webp';
 
 const Problems = () => {
   return (
@@ -26,7 +26,7 @@ const Problems = () => {
   );
 };
 
-const Img = ({ src }) => {
+const Img = ({ src }: { src: StaticImageData }) => {
   return (
     <Image
       className='w-full aspect-[4_/_3] object-cover'

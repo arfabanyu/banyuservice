@@ -1,5 +1,4 @@
-'use client';
-import { useEffect, useState } from 'react';
+
 import Hero from '@/app/sections/Hero';
 import Merk from './sections/Merk';
 import SocialProof from './sections/SocialProof';
@@ -14,13 +13,6 @@ import Problems from './sections/Problems';
 import Gallery from './sections/Gallery';
 
 export default function Home() {
-  const [scroll, setScroll] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () =>
-      window.scrollY > 0 ? setScroll(true) : setScroll(false)
-    );
-  }, []);
   return (
     <div>
       <Navbar />

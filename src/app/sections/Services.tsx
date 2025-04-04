@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa6';
-import one from '/images/generals/layar-flicker.webp';
-import nine from '/images/generals/stock-motherboard-sharp.webp';
-import three from '/images/generals/penggantian-lampu-backlight.webp';
-import eleven from '/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
+import one from '~/images/generals/layar-flicker.webp';
+import nine from '~/images/generals/stock-motherboard-sharp.webp';
+import three from '~/images/generals/penggantian-lampu-backlight.webp';
+import eleven from '~/images/generals/hasil-perbaikan-layar-android-tv-sony.webp';
 
 const Services = () => {
   return (
@@ -79,10 +79,10 @@ const Services = () => {
   );
 };
 
-const Img = ({ src, alt = '' }) => {
+const Img = ({ src, alt }: { src: StaticImageData; alt: string }) => {
   return (
     <Image
-      className='w-full aspect-[4_/_3] object-cover'
+      className='w-full aspect-[4_/_3] object-cover~'
       src={src}
       alt={alt}
       width={500}
