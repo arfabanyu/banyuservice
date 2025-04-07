@@ -1,7 +1,7 @@
 // import { Link } from 'react-router-dom';
 import hero from '~/images/generals/hero.svg';
 import Image from 'next/image';
-import { FaArrowRight } from 'react-icons/fa6';
+import WaLink from '@/components/WaLink';
 
 const Hero = () => {
   return (
@@ -25,16 +25,11 @@ const Hero = () => {
           <p className='max-w-2xl font-light mb-6 lg:mb-8 md:text-lg lg:text-xl'>
             Cari <strong>service TV Jakarta</strong> terpercaya? Kami siap
             menangani berbagai{' '}
-            <strong>kerusakan TV LED, LCD, dan plasma</strong> dengan teknisi
+            <strong>kerusakan TV LED, LCD, dan Plasma</strong> dengan teknisi
             berpengalaman, harga jujur, layanan cepat, dan garansi nyata. TV
             Anda nggak boleh pensiun dini!
           </p>
-          <a
-            href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?'
-            className='btn btn-primary btn-lg'
-          >
-            Hubungi <FaArrowRight />
-          </a>
+          <WaLink />
           <a href='#problems' className='btn btn-ghost btn-lg ml-3'>
             Mulai
           </a>

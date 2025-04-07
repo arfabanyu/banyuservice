@@ -1,6 +1,12 @@
 import { IoLogoWhatsapp } from 'react-icons/io';
-import { FaBusinessTime, FaLocationDot } from 'react-icons/fa6';
+import {
+  FaBusinessTime,
+  FaFacebook,
+  FaInstagram,
+  FaLocationDot,
+} from 'react-icons/fa6';
 import { BsDot } from 'react-icons/bs';
+import { GoogleMapsEmbed } from '@next/third-parties/google';
 
 const Footer = () => {
   return (
@@ -75,15 +81,37 @@ const Footer = () => {
           </li>
         </nav>
         <nav>
+          <h6 className='footer-title'>Social Media Kami</h6>
+          <li className='flex gap-2'>
+            <FaFacebook className='text-blue-500' />
+            <a
+              href='https://www.facebook.com/banyuservis'
+              className='link link-hover w-45'
+            >
+              Banyuservice Elektronik
+            </a>
+          </li>
+          <li className='flex gap-2'>
+            <FaInstagram className='text-fuchsia-500' />
+            <a
+              href='https://www.facebook.com/banyuservis'
+              className='link link-hover w-45'
+            >
+              banyuservice_elektronik
+            </a>
+          </li>
+        </nav>
+        <nav>
           <h6 className='footer-title'>Temukan Kami di Google Maps</h6>
-
-          <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d350.6034909546565!2d106.80924670492664!3d-6.180827527987647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7cd4213d9cb%3A0xb40d2b38ec5829e4!2sBanyu%20Service%20LED%20Tv!5e0!3m2!1sen!2sid!4v1743636187023!5m2!1sen!2sid'
-            className='border-0 w-45 h-56'
-            allowFullScreen
-            loading='lazy'
-            referrerPolicy='no-referrer-when-downgrade'
-          ></iframe>
+          <GoogleMapsEmbed
+            apiKey={`${process.env.NEXT_PUBLIC_API_KEY}`}
+            allowfullscreen
+            zoom='16'
+            mode='place'
+            q='-6.180701,106.809287'
+            height={224}
+            width={180}
+          />
         </nav>
       </footer>
       <footer className='footer sm:footer-horizontal footer-center bg-sky-950 text-primary-content p-4'>

@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.13.3",
+    "@next/third-parties": "^15.2.4",
     "flowbite-react": "^0.11.5",
     "next": "15.2.4",
     "react": "^19.0.0",

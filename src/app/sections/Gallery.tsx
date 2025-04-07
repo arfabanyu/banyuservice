@@ -35,7 +35,7 @@ const Gallery = () => {
             Dari TV mati total menjadi normal kembali! Kami telah menangani{' '}
             <strong>2.000+</strong> TV dengan tingkat kepuasan pelanggan{' '}
             <strong>4.9/5</strong> dan lebih dari <strong>10</strong> tahun
-            pengalaman dalam service TV LED, LCD, dan plasma.
+            pengalaman dalam service TV LED, LCD, dan Plasma.
           </p>
         </div>
         <div

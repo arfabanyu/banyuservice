@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import logo from '~/images/logos/logo.jpg';
+import logo from '~/images/logos/banyuservice.jpg';
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -43,8 +43,8 @@ const Navbar = () => {
             </label>
           </div>
           <div className='mx-2 flex items-center space-x-2 px-2'>
-            <Image src={logo} alt='' width={32} className='inline-block' />
-            <h1 className='text-2xl font-bold'>Banyuservice</h1>
+            <Image src={logo} alt='banyuservice-logo' width={32} className='inline-block' />
+            <h2 className='text-2xl font-bold'>Banyuservice</h2>
           </div>
           <div className='hidden flex-none lg:block'>
             <ul className='menu menu-horizontal'>

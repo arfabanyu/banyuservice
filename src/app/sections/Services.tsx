@@ -20,10 +20,10 @@ const Services = () => {
               <span className='bg-primary text-primary-content rounded-lg'>
                 Service
               </span>{' '}
-              TV LED, LCD, dan plasma
+              TV LED, LCD, dan Plasma
             </span>
           }
-          body='Kami menyediakan jasa service TV LED, LCD, dan plasma untuk berbagai merek, dari model klasik hingga teknologi terbaru. Tim kami siap menghidupkan kembali layar favorit Anda dengan metode perbaikan yang aman dan profesional.'
+          body='Kami menyediakan jasa service TV LED, LCD, dan Plasma untuk berbagai merek, dari model klasik hingga teknologi terbaru. Tim kami siap menghidupkan kembali layar favorit Anda dengan metode perbaikan yang aman dan profesional.'
           visualKey={1}
         />
       </Service>

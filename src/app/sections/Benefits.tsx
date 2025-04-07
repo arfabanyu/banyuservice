@@ -28,7 +28,7 @@ const Benefits = () => {
           <Card
             icon={<MdEngineering />}
             title='Teknisi senior & berpengalaman'
-            body='Kami hanya mempekerjakan teknisi berpengalaman yang ahli di bidang perbaikan TV LED, LCD, dan plasma, jadi Anda bisa yakin bahwa TV Anda di tangan yang tepat. Dengan keahlian bertahun-tahun, kami siap menangani segala kerusakan.'
+            body='Kami hanya mempekerjakan teknisi berpengalaman yang ahli di bidang perbaikan TV LED, LCD, dan Plasma, jadi Anda bisa yakin bahwa TV Anda di tangan yang tepat. Dengan keahlian bertahun-tahun, kami siap menangani segala kerusakan.'
           />
           <Card
             icon={<MdPriceCheck />}

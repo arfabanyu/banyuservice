@@ -1,4 +1,3 @@
-
 import Hero from '@/app/sections/Hero';
 import Merk from './sections/Merk';
 import SocialProof from './sections/SocialProof';

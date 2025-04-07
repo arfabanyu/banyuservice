@@ -1,5 +1,5 @@
+import WaLink from '@/components/WaLink';
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
@@ -21,12 +21,7 @@ const Contact = () => {
             kami untuk konsultasi dan penjadwalan service TV di area Jakarta dan
             sekitarnya.
           </p>
-          <a
-            href='https://wa.me/6287887708006?text=Halo%20admin,%20saya%20ingin%20menanyakan%20layanan%20perbaikan%20TV.%20Bisa%20dibantu?'
-            className='btn btn-primary btn-lg'
-          >
-            Hubungi <FaArrowRight />
-          </a>
+          <WaLink />
         </div>
       </div>
     </section>

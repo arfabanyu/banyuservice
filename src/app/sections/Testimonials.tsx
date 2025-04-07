@@ -47,27 +47,92 @@ const Testimonials = () => {
           {!isShow && (
             <div className='w-full absolute h-full bg-gradient-to-t from-base-100 to-50% to-transparent'></div>
           )}
-          <Image src={one} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={two} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={three} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={four} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={five} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={six} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={seven} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={eight} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={nine} alt='' className='w-96 h-fit' loading='lazy' />
+          <Image
+            src={one}
+            alt='Penilaian bintang 5 dari Saiful Bahri'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={two}
+            alt='Penilaian bintang 5 dari Syaqilah Amaliyah'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={three}
+            alt='Penilaian bintang 5 dari Nur Shuhup'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={four}
+            alt='Penilaian bintang 5 dari Boffi Tias'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={five}
+            alt='Penilaian bintang 5 dari Rahmat Elextronik'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={six}
+            alt='Penilaian bintang 5 dari Dodo Sumimbar'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={seven}
+            alt='Penilaian bintang 5 dari Ridwan Akbar'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={eight}
+            alt='Penilaian bintang 5 dari Iwan Setiawan'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={nine}
+            alt='Penilaian bintang 5 dari Eka Ina'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
           <Image
             src={ten}
-            alt=''
+            alt='Penilaian bintang 5 dari Asteria Paramita'
             height={0}
             width={0}
             className='w-96 h-fit'
             loading='lazy'
           />
-          <Image src={eleven} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={twelve} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={thirteen} alt='' className='w-96 h-fit' loading='lazy' />
-          <Image src={fourteen} alt='' className='w-96 h-fit' loading='lazy' />
+          <Image
+            src={eleven}
+            alt='Penilaian bintang 5 dari Rus Manasanjaya'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={twelve}
+            alt='Penilaian bintang 5 dari Asri Nain'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={thirteen}
+            alt='Penilaian bintang 5 dari Muhammad Kharima Akbar (MasKay)'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
+          <Image
+            src={fourteen}
+            alt='Penilaian bintang 5 dari Sadinnugroho Nugroho'
+            className='w-96 h-fit'
+            loading='lazy'
+          />
         </div>
         <div className='space-x-2'>
           <button onClick={handleShow} className='btn btn-outline'>

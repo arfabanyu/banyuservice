@@ -1,7 +1,8 @@
-
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Head from 'next/head';
+import { Metadata } from 'next';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -13,18 +14,44 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata = {
-  title: 'Service TV Jakarta | Perbaikan TV LED, LCD, Plasma | Banyuservice',
+export const metadata: Metadata = {
+  title: 'Service TV Jakarta | Perbaikan TV LED, LCD, Plasma',
   description:
-    'Jasa service TV LED, LCD, dan plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
+    'Jasa service TV LED, LCD, dan Plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
   openGraph: {
-    title: 'Service TV Jakarta | Perbaikan TV LED, LCD, Plasma | Banyuservice',
+    title: 'Service TV Jakarta | Perbaikan TV LED, LCD, Plasma',
     description:
-      'Jasa service TV LED, LCD, dan plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
+      'Jasa service TV LED, LCD, dan Plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
     url: 'https://banyuservice.com',
     siteName: 'Banyuservice',
     locale: 'id_ID',
     type: 'website',
+  },
+  alternates: {
+    canonical: 'https://banyuservice.com/',
+  },
+
+  referrer: 'origin-when-cross-origin',
+  keywords: [
+    'service tv jakarta barat',
+    'service tv panggilan',
+    'service tv samsung',
+    'service tv sony jakarta',
+  ],
+  authors: [
+    { name: 'Banyuservice' },
+    { name: 'Banyuservice', url: 'https://nextjs.org' },
+  ],
+  creator: 'Banyuservice',
+  publisher: 'Banyuservice',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  verification: {
+    google:
+      'google-site-verification=Q1teCMF_W6VdgORecbV68LBuf3c59VVx1ts7L1qODM4',
   },
 };
 
@@ -38,8 +65,8 @@ export default function RootLayout({
     '@type': 'LocalBusiness',
     name: 'Banyuservice TV Jakarta',
     description:
-      'Jasa service TV LED, LCD, dan plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
-    image: 'https://banyuservice.com/images/logos/logo.jpg',
+      'Jasa service TV LED, LCD, dan Plasma di Jakarta dengan teknisi berpengalaman. Layanan cepat, harga jujur, dan bergaransi.',
+    image: 'https://banyuservice.com/images/logos/banyuservice.jpg',
     url: 'https://banyuservice.com',
     telephone: '+62 878-8770-8006',
     address: {
@@ -62,18 +89,21 @@ export default function RootLayout({
     ],
   };
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en'>
       <Head>
-        <script type='application/ld+json'>
-          {JSON.stringify(schemaMarkup)}
-        </script>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        />
       </Head>
+      <GoogleTagManager gtmId={`${process.env.NEXT_PUBLIC_GTM_ID}`} />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiase`}
         data-theme='light'
       >
         {children}
       </body>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_ID}`} />
     </html>
   );
 }
